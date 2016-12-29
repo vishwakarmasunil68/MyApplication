@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="User Name"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textSize="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Transfer"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textColor="#000080"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView"
+        android:textStyle="bold"
+        android:hint="Enter Account_no."
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/srchbtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textView"
+       android:layout_alignParentRight="true"
+        android:text="Search"
+        android:background="@drawable/border"
+        />
+
+</RelativeLayout>

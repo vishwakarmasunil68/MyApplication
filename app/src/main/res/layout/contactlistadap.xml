@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textnumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="text2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textamounttype"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textservicefees"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textcontact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="text1"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textamount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="12sp"/>
+
+
+
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/textnumber"
+            android:focusable="false"
+            android:focusableInTouchMode="false"></View>
+        -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textnumber"
+        android:background="@color/colorAccent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"></View>
+
+</LinearLayout>

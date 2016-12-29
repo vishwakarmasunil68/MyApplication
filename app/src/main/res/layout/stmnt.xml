@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textnumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/texttranstype"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Transaction"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textservice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Service Fees"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textcontact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Reference"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textamount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/contactlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlayout"
+        android:layout_below="@+id/linear"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/totalbalancetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Total Available Balance" />
+
+        <TextView
+            android:id="@+id/totalblnccheck"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:text="CHECK" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/matchpin"
+        style="@style/AppTheme.Edittext"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="pin"
+        android:inputType="numberPassword"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please put your PIN:"
+        android:textColor="#0000CD"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textpin"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="PIN"
+        android:textStyle="bold"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textpin"
+        android:gravity="center"
+
+        >
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border"
+            android:text="OK" />
+    </RelativeLayout>
+</RelativeLayout>

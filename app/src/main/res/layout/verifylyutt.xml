@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="70dp"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Edittext"
+        android:hint="pin"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Please put your PIN:"
+        android:id="@+id/textView"
+        android:textColor="#0000CD"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textpin"
+        android:layout_marginTop="20dp"
+        android:text="PIN"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textpin"
+        android:gravity="center"
+
+        >
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btn_okay"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="@drawable/border"/>
+    </RelativeLayout>
+</RelativeLayout>
